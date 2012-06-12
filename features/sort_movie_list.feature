@@ -40,6 +40,14 @@ Scenario: sort movies in increasing order of release date
   Given I check the following ratings: PG, R, G, PG-13, NC-17
   And   I press "ratings_submit"
   When  I follow "Release Date"
-  Then  I should see "2001-01-05 00:00:00 UTC" before "2001-04-25 00:00:00 UTC"
+  Then  I should see "1968-04-06 00:00:00 UTC" before "1981-06-12 00:00:00 UTC"
+  And   I should see "1981-06-12 00:00:00 UTC" before "1984-10-26 00:00:00 UTC"
+  And   I should see "1984-10-26 00:00:00 UTC" before "1989-07-21 00:00:00 UTC"
+  And   I should see "1989-07-21 00:00:00 UTC" before "1992-11-25 00:00:00 UTC"
+  And   I should see "1992-11-25 00:00:00 UTC" before "2000-06-21 00:00:00 UTC"
+  And   I should see "2000-06-21 00:00:00 UTC" before "2001-01-05 00:00:00 UTC"
+  And   I should see "2001-01-05 00:00:00 UTC" before "2001-04-25 00:00:00 UTC"
+  And   I should see "2001-04-25 00:00:00 UTC" before "2004-11-05 00:00:00 UTC"
+  And   I should see "2004-11-05 00:00:00 UTC" before "2011-08-10 00:00:00 UTC"
   # your steps here
 
